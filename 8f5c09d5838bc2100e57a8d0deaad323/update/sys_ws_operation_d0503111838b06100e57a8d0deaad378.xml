@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>React Resources</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var log = "[React APP Resources]";
+    var fileName = request.pathParams.file;
+	log += "\nFILE NAME: " + fileName;
+    var currentRecord = "d0503111838b06100e57a8d0deaad378";
+    var ar = new GlideRecord('sys_attachment');
+    ar.addQuery('table_sys_id', currentRecord);
+    ar.addQuery('file_name', fileName);
+    ar.query();
+    if (ar.next()) {
+		log +=  "\nATTACHMENT NAME: " + ar.file_name;
+        var message = new GlideSysAttachment().getContent(ar);
+        if (fileName.indexOf('.js') > 0) response.setContentType('text/javascript');
+        else response.setContentType('text/css');
+        response.setStatus(200);
+        response.getStreamWriter().writeString(message);
+    } else {
+        return "file not found";
+    }
+
+	gs.info(log);
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_314547_react_app/react_application_api/{file}</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/{file}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-26 12:59:51</sys_created_on>
+        <sys_id>d0503111838b06100e57a8d0deaad378</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>React Resources</sys_name>
+        <sys_package display_value="React Application" source="x_314547_react_app">8f5c09d5838bc2100e57a8d0deaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="React Application">8f5c09d5838bc2100e57a8d0deaad323</sys_scope>
+        <sys_update_name>sys_ws_operation_d0503111838b06100e57a8d0deaad378</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-26 13:00:56</sys_updated_on>
+        <web_service_definition display_value="React Application API">8edfa5dd834b06100e57a8d0deaad37c</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

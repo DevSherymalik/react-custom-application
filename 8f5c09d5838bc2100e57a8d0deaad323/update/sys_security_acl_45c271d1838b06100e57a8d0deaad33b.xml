@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <condition/>
+        <description/>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_314547_react_app_react_user_interfact</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-26 13:09:53</sys_created_on>
+        <sys_id>45c271d1838b06100e57a8d0deaad33b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_314547_react_app_react_user_interfact</sys_name>
+        <sys_package display_value="React Application" source="x_314547_react_app">8f5c09d5838bc2100e57a8d0deaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="React Application">8f5c09d5838bc2100e57a8d0deaad323</sys_scope>
+        <sys_update_name>sys_security_acl_45c271d1838b06100e57a8d0deaad33b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-26 13:09:53</sys_updated_on>
+        <type display_value="ui_page">ui_page</type>
+    </sys_security_acl>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-26 13:09:53</sys_created_on>
+        <sys_id>95c271d1838b06100e57a8d0deaad33f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_314547_react_app_react_user_interfact.admin</sys_name>
+        <sys_package display_value="React Application" source="x_314547_react_app">8f5c09d5838bc2100e57a8d0deaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="React Application">8f5c09d5838bc2100e57a8d0deaad323</sys_scope>
+        <sys_security_acl display_value="x_314547_react_app_react_user_interfact">45c271d1838b06100e57a8d0deaad33b</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_95c271d1838b06100e57a8d0deaad33f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-26 13:09:53</sys_updated_on>
+        <sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role>
+    </sys_security_acl_role>
+</record_update>
